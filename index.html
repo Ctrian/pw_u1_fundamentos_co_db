@@ -29,7 +29,7 @@
       <strong> texto que quiero resaltar </strong>
       <br />
       <!-- Salto de linea -->
-      <em> Texto en cursiva resaltado </em>
+      <em> Juegos de matemáticas </em>
       <br />
       <i> Texto en cursiva </i>
       <br />
@@ -59,14 +59,95 @@
       </ol>
 
       <!-- Tablas -->
-       
+      <table border="1">
+        <thead>
+          <!-- cabecera -->
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Cédula</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- cuerpo filas/columnas -->
+          <tr>
+            <th>Andres</th>
+            <th>Olivares</th>
+            <th>1750</th>
+            <th><button>Editar</button></th>
+          </tr>
+          <tr>
+            <th>David</th>
+            <th>Boada</th>
+            <th>1720</th>
+            <th><button>Editar</button></th>
+          </tr>
+          <tr>
+            <th>Andres</th>
+            <th>Lara</th>
+            <th>000</th>
+            <th><button>Editar</button></th>
+          </tr>
+          <tr>
+            <th>Pepito</th>
+            <th>Perez</th>
+            <th>333</th>
+            <th><button>Editar</button></th>
+          </tr>
+        </tbody>
+      </table>
 
+      <!-- Contenedores html -->
+      <div>
+        <button>Actualizar</button>
+        <button>Eliminar</button>
+        <button>Buscar</button>
+      </div>
+
+      <!-- Formularios -->
+      <form action="https://www.google.com">
+        <h1>Estudiante</h1>
+        <label for="id_nom">Nombre: </label>
+        <br />
+        <input id="id_nom" type="text" placeholder="Enrique" />
+        <br />
+        <label for="id_email">Email: </label>
+        <br />
+        <input id="id_email" type="email" placeholder="abc@uce.edu.ec" />
+        <br />
+        <label for="id_date">Fecha: </label>
+        <br />
+        <input id="id_date" type="date" />
+        <br />
+        <label for="id_pass">Password: </label>
+        <br />
+        <input id="id_pass" type="password" />
+        <br />
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- Multimedia -->
+      <img
+        src="./IMG/logo vue.svg"
+        alt="No encontrado"
+        width="300"
+        height="300"
+      />
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4" 
+        width="300"
+        height="300"
+        controls
+      ></video>
     </section>
-    <aside><!-- Publicidad, anuncis --></aside>
-    <footer><!-- Pie de página -->
-        Av. América entre la Gasca y Bolivia
-        <br>
-        Todos los derechos reservados &copy; 2024
+    <aside><!-- Publicidad, anuncios --></aside>
+    <footer>
+      <!-- Pie de página -->
+      Av. América entre la Gasca y Bolivia
+      <br />
+      Todos los derechos reservados &copy; 2024
     </footer>
   </body>
 </html>
