@@ -20,3 +20,7 @@ p {
   background: rgb(197, 197, 231);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+  background: black;
+}
