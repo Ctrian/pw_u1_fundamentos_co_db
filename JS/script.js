@@ -60,7 +60,7 @@ function dividir(num1, num2) {
 function fundamentosjs() {
   /*Tipos de vvariables*/
 
-  var nombre = "David , Cristian"; //antigua, ya es considerada obsoleta
+  var nombre1 = "David , Cristian"; //antigua, ya es considerada obsoleta
   let apellido = "Boada , Olivares"; // variables cambiantes
   let apellido2 = 15; //tipado dinámico(No se nesecita declarar el tipo de Dato)
   apellido2 = "Calvache";
@@ -72,7 +72,7 @@ function fundamentosjs() {
   const IVA = 12.8;
 
   console.log("Fundamentos de JS");
-  console.log(nombre);
+  console.log(nombre1);
   console.log(IVA);
   console.log(arreglo);
 
@@ -148,12 +148,125 @@ function fundamentosjs() {
   if (profesor.edad !== 36) {
     console.log("Es diferente de 36");
   } else {
-    console.log("Tiene 36"  );
+    console.log("Tiene 36");
   }
 
-  for(let clave in profesor) {
+  for (let clave in profesor) {
     console.log(clave);
     console.log(profesor[clave]);
   }
 
+  const e1 = {
+    nombre: "Lomas",
+    apellido: "Turbias",
+    edad: 16,
+    ecuatoriano: true,
+    genero: "Pan",
+    ciudad: "Loja",
+  };
+
+  const e2 = {
+    nombre: "Lomas",
+    apellido: "Turbias",
+    edad: 16,
+    ecuatoriano: true,
+    genero: "Pan",
+    ciudad: "Loja",
+  };
+
+  const arrEstu = [
+    e1,
+    e2,
+    {
+      nombre: "Lala",
+      apellido: "Turbias",
+      edad: 16,
+      ecuatoriano: true,
+      genero: "Pan",
+      ciudad: "Loja",
+    },
+  ];
+  console.log(arrEstu[2]);
+
+  /* Desestructuración */
+  // des de arreglos
+  const ar1 = [1, 2, 3, 4, 5, 6, 7];
+  const [a, b, c, d, e] = ar1; //La guía es la posición
+  console.log(a); // imprime 1
+  console.log(d); // imprime 4
+
+  const [primero, , , , , , ultimo] = ar1;
+  console.log(primero); //imprime 1
+  console.log(ultimo); //imprime 7
+
+  const [pos1, pos2] = [1, 2, 3, 4, 5, 6, 7]; // declaración directa de la desestructuración
+  console.log(pos1);
+  console.log(pos2);
+  console.log("Impresion de funcion");
+  imprime(ar1);
+
+  const e3 = {
+    nombre: "Lomas",
+    apellido: "Turbias",
+    edad: 16,
+    ecuatoriano: true,
+    genero: "Pan",
+    ciudad: "Loja",
+  };
+
+  /* Desestructuración de objetos */
+  // ya no la posición, sino el nombre de los atributos
+  const { nombre, ciudad } = e3;
+  console.log(nombre);
+  console.log(ciudad);
+
+  const { nombre: n, ciudad: ciu } = {
+    nombre: "Lomas",
+    apellido: "Turbias",
+    edad: 16,
+    ecuatoriano: true,
+    genero: "Pan",
+    ciudad: "Loja",
+  };
+  console.log(n);
+  console.log(ciu);
+
+  const e4 = {
+    nombre: "Lomas",
+    apellido: "Turbias",
+    edad: 16,
+    ecuatoriano: true,
+    genero: "Pan",
+    ciudad: "Loja",
+    dirección: {
+      callePrincipal: "Av. America",
+      barrio: "La Gasca",
+      numero: "Oe-20",
+    },
+  };
+  console.log(e4.dirección);
+  console.log(e4.dirección.numero);
+
+  // cambio de nombre a la variable - edad:ed
+  const { edad: ed, dirección } = e4;
+  console.log(ed);
+  console.log(dirección);
+  const { callePrincipal } = dirección;
+  console.log(callePrincipal);
+
+  const {
+    dirección: { callePrincipal: cp, numero },
+  } = e4;
+  console.log(cp);
+  console.log(numero);
+
+  
+
+}
+
+// like función genérica
+function imprime([a, b, c]) {
+  console.log(a);
+  console.log(b);
+  console.log(c);
 }
