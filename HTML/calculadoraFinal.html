@@ -6,7 +6,7 @@
     <title>Calculadora Final</title>
     <link rel="stylesheet" href="../CSS/calculadoraFinal.css" />
     <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
-<script src="../JS/calculadoraFinal.js"></script>
+    <script src="../JS/calculadoraFinal.js"></script>
   </head>
   <body>
     <div class="container">
@@ -15,28 +15,26 @@
       <section>
         <div id="calculadora">
           <!-- <label for="">0+1=1</label> -->
-           <div id="display">
-            1+2=3
-           </div>
-          <button>C</button>
-          <button>&larr;</button>
-          <button>%</button>
-          <button>/</button>
-          <button onclick="mostrarDisplay(7)">7</button>
-          <button onclick="mostrarDisplay(8)">8</button>
-          <button onclick="mostrarDisplay(9)">9</button>
-          <button>*</button>
-          <button onclick="mostrarDisplay(4)">4</button>
-          <button onclick="mostrarDisplay(5)">5</button>
-          <button onclick="mostrarDisplay(6)">6</button>
-          <button>-</button>
-          <button onclick="mostrarDisplay(1)">l</button>
-          <button onclick="mostrarDisplay(2)">2</button>
-          <button onclick="mostrarDisplay(3)">3</button>
-          <button onclick="mostrarDisplay('+')">+</button>
-          <button onclick="mostrarDisplay(0)">0</button>
-          <button>.</button>
-          <button class="column-2">=</button>
+           <div id="display" class="display-calculadora"></div>
+          <button onclick="mostrarEnDisplay('C')">C</button>
+          <button onclick="mostrarEnDisplay('←')">&larr;</button>
+          <button onclick="mostrarEnDisplay('%')">%</button>
+          <button onclick="mostrarEnDisplay('/')">/</button>
+          <button onclick="mostrarEnDisplay(7)">7</button>
+          <button onclick="mostrarEnDisplay(8)">8</button>
+          <button onclick="mostrarEnDisplay(9)">9</button>
+          <button onclick="mostrarEnDisplay('*')">*</button>
+          <button onclick="mostrarEnDisplay(4)">4</button>
+          <button onclick="mostrarEnDisplay(5)">5</button>
+          <button onclick="mostrarEnDisplay(6)">6</button>
+          <button onclick="mostrarEnDisplay('-')">-</button>
+          <button onclick="mostrarEnDisplay(1)">1</button>
+          <button onclick="mostrarEnDisplay(2)">2</button>
+          <button onclick="mostrarEnDisplay(3)">3</button>
+          <button onclick="mostrarEnDisplay('+')">+</button>
+          <button onclick="mostrarEnDisplay(0)">0</button>
+          <button onclick="mostrarEnDisplay('.')">.</button>
+          <button onclick="mostrarEnDisplay('=')" class="column-2">=</button>
         </div>
       </section>
       <footer>Pie</footer>

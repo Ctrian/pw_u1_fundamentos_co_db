@@ -22,8 +22,11 @@ button {
   background: rgb(122, 117, 108);
 }
 #display {
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+  justify-content: flex-end;  /* alinea a la derecha */
   grid-column: span 4;
-  font-size: 70px;
+  font-size: 40px;
   text-align: right;
   border: solid;
   font-family: "DS-Digital", sans-serif;
