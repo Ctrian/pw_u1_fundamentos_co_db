@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(255, 215, 166);
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  font-size: 20px;
+  color:rgb(117, 71, 14);
+  padding-top: 10px;
+}
+
+input {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 78, 47);
+    background: rgb(255, 235, 210);
+    color: black;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+input:focus {
+    outline: black;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(255, 38, 0);
+}
+
+.formulario {
+    background:  rgb(247, 195, 164);
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 5px;
+    padding: 40px 50px;
+    box-shadow: 15px 15px rgba(99, 99, 99, 0.267);
+}
+
+button {
+    background: rgb(255, 162, 119);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: whitesmoke;
+    margin-top: 20px;
+    border: none;
+}
+
+button:hover {
+    background: rgb(202, 139, 110);
+    color: black;
+}
+
+button:focus {
+ background: rgb(197, 144, 120);
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+h2, header {
+    color: rgb(61, 78, 73);
+    border-bottom: 2px solid rgb(37, 58, 51);
+}
