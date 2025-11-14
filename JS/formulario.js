@@ -5,49 +5,33 @@ function guardar() {
  
 function validarCampos(){
     limpiarMensajes();
+
     let nombre = document.getElementById("id_nombre").value;
- 
-    if(nombre === ""){
-        mostrarMensaje('Nombre necesario');
-        mostrarAsterisco('id_error_nombre');
-        return;
- 
-    }
- 
     let apellido = document.getElementById("id_apellido").value;
- 
-    if(apellido === ""){
-        mostrarMensaje('Apellido necesario');
-        mostrarAsterisco('id_error_apellido');
-        return;
- 
-    }
- 
     let fecha = document.getElementById("id_fn").value;
- 
-    if(fecha === ""){
-        mostrarMensaje('Fecha necesario');
-        mostrarAsterisco('id_error_fn');
-        return;
- 
-    }
- 
     let email = document.getElementById("id_email").value;
- 
-    if(!validarEmail(email)){
-        mostrarMensaje('Email necesario');
-        mostrarAsterisco('id_error_email');
-        validarEmail('id_email');
-        return;
- 
-    }
- 
     let password = document.getElementById("id_pass").value;
-    if(password === ""){
-        mostrarMensaje('Contrasenia necesario');
-        mostrarAsterisco('id_error_pass');
-        return;
- 
+
+    // Mostrar asteriscos en todos los campos con error
+    if(nombre === "") mostrarAsterisco('id_error_nombre');
+    if(apellido === "") mostrarAsterisco('id_error_apellido');
+    if(fecha === "") mostrarAsterisco('id_error_fn');
+    if(email === "" || !validarEmail(email)) mostrarAsterisco('id_error_email');
+    if(password === "") mostrarAsterisco('id_error_pass');
+
+    // Validar todo con un if general
+    if(
+        nombre !== "" &&
+        apellido !== "" &&
+        fecha !== "" &&
+        email !== "" &&
+        validarEmail(email) &&
+        password !== ""
+    ){
+        mostrarMensaje('Formulario válido. Puedes continuar.');
+        // Aquí puedes continuar con el guardado
+    } else {
+        mostrarMensaje('Por favor, complete los campos obligatorios.');
     }
 }
  
