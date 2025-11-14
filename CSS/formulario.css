@@ -69,3 +69,19 @@ h2, header {
     color: rgb(61, 78, 73);
     border-bottom: 2px solid rgb(37, 58, 51);
 }
+
+.msg_error {
+    background: red;
+    color: rgb(255, 255, 255);
+    border-left: 5px solid brown;
+    padding: 10px;
+    display: none;
+    font-weight: bold;
+}
+
+.error_asterisco {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    display: none;
+}

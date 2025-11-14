@@ -13,28 +13,42 @@
       <div class="formulario">
         <nav>N</nav>
         <section>
-          <form action="">
+          <form action="#">
             <h2>Ingrese un nuevo estudiante</h2>
+            <div id="id_msg_error" class="msg_error"> Error al llenar los compos </div>
             <p type="Nombre: ">
-              <input type="text" placeholder="ej: Andres" />
+              <span id="id_error_nombre" class="error_asterisco"></span>
+              <input id="id_nombre" type="text" placeholder="ej: Andres" />
             </p>
 
             <p type="Apellido: ">
-              <input type="text" placeholder="ej: Lara" />
+              <span id="id_error_apellido" class="error_asterisco"></span>
+              <input id="id_apellido" type="text" placeholder="ej: Lara" />
             </p>
 
-            <p type="Fecha de Nacimiento: "><input type="date" /></p>
+            <p type="Fecha de Nacimiento: ">
+              <span id="id_error_fn" class="error_asterisco"></span>
+              <input id="id_fn" type="date" />
+            </p>
             <p type="Email: ">
-              <input type="email" placeholder="alguien@mail.com" />
+              <span id="id_error_email" class="error_asterisco"></span>
+              <input
+                id="id_email"
+                type="email"
+                placeholder="alguien@mail.com"
+              />
             </p>
             <p type="Contraseña: ">
-              <input type="password" placeholder="perrito123" />
+              <span id="id_error_pass" class="error_asterisco"></span>
+              <input id="id_pass" type="password" placeholder="perrito123" />
             </p>
-            <div class="centrar-boton"><button>Guardar</button></div>
+            <div class="centrar-boton">
+              <button onclick="guardar()">Guardar</button>
+            </div>
           </form>
         </section>
       </div>
-      <footer>Todos los derechos reservados</footer>
+      <footer>Todos los derechos reservados &#169;</footer>
     </div>
   </body>
 </html>
