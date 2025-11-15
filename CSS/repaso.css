@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.imagen {
+    margin-right: 50px;
+    padding-top: 60px;
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  font-size: 20px;
+  color:rgb(186, 188, 187);
+  padding-top: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h1 {
+    color: rgb(100, 114, 127);
+    font-weight: 700;
+}
+.division{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+.exp{
+    margin-right: 30px;
+    width: 130px;
+    
+}
+.cvv{
+    margin-right: 30px;
+    width: 130px;
+}
+
+input{
+    width: 350px;
+    height: 47px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: solid 2px rgb(225, 228, 227);
+    padding-left: 50px;
+}
+
+input::placeholder {
+  color: #cecbcb; /* Cambia este valor al color que prefieras */
+  opacity: 10;  /* Para que no sea translúcido */
+}
+
+button{
+    width: 400px;
+    border-radius: 5px;
+    height: 50px;
+    color: whitesmoke;
+    background: rgb(108, 96, 241);
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}

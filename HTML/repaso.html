@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/repaso.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <nav></nav>
+      <section>
+        <div class="principal">
+          <div class="imagen">
+            <img src="/IMG/tarjeta.png" alt="" />
+          </div>
+
+          <div class="cont-form">
+            <form action="" class="formulario">
+              <h1>Payment Details</h1>
+              <p type="Cardholder Name" class="input-icon">
+                <input type="text" placeholder="Mis Kate Smith" />
+              </p>
+              <p type="Card Number">
+                <input type="number" placeholder="0000 0000 0000 0000" />
+              </p>
+              <div class="division">
+                <p type="Exp Date">
+                  <input class="exp"
+                    type="text"
+                    id="exp"
+                    placeholder="MM/YY"
+                    maxlength="5"
+                    pattern="(0[1-9]|1[0-2])\/\d{2}"
+                    required
+                  />
+                </p>
+                <p type="CVV">
+                  <input  class="cvv" type="number" placeholder="0000" />
+                </p>
+              </div>
+              <div class="centrar-boton">
+              <button>Confirm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
